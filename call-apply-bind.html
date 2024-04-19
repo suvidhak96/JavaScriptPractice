@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+// call()        
+        let obj1={
+            name:"suvidha",
+            address:"pune",
+            getData:function(age){
+                return this.name + " " + this.address + age
+            }
+        }
+        // console.log(obj1)
+
+        let obj2={
+        
+            name:'niki',
+            address:'goa'
+        }
+        // console.log(obj1.getData.call(obj2,25))
+
+// apply()
+console.log(obj1.getData.apply(obj2,[25]))
+
+    </script>
+</body>
+</html>

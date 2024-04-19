@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // let n=5, first=0,second=1,next;
+      // for(let i=0;i<n;i++){
+      //     next=first+second;
+      //     first=second;
+      //     second=next
+      // }
+      // console.log(next)
+
+      const number = 5;
+      let n1 = 0,
+        n2 = 1,
+        nextTerm;
+
+      console.log("Fibonacci Series:");
+
+      for (let i = 1; i <= number; i++) {
+        console.log(n1);
+        nextTerm = n1 + n2;
+        n1 = n2;
+        n2 = nextTerm;
+      }
+    </script>
+  </body>
+</html>
