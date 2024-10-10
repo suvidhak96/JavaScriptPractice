@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let str='ui_developer_angular'
+    let removeunderscore=str.replaceAll('_',' ')
+    let res=removeunderscore.split(' ').map((item)=>{
+        return item[0].toUpperCase()+item.slice(1)
+        // console.log(item)
+    }).join(' ')
+    console.log(res)
+</script>
+</html>
